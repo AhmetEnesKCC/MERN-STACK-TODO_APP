@@ -105,6 +105,6 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../build"));
 });
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 4002, () => {
   console.log("App started at port : " + PORT);
 });
