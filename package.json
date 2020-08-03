@@ -53,8 +53,7 @@
     ]
   },
   "engines": {
-    "node": "^10.0.28",
-    "npm": "^16.13.1"
+    "node": "^10.0.28"
   },
   "proxy": "http://localhost:4002"
 }
