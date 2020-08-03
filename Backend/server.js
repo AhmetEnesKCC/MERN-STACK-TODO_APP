@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 const uri =
   "mongodb+srv://AhmetEnesKCC:14531453fsm2@cluster0.zsaga.gcp.mongodb.net/mern-stack-app>?retryWrites=true&w=majority";
 
-mongoose.connect(uri, {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
