@@ -23,6 +23,7 @@ export default function EditTodo() {
                 className="animated shake form-control form-control-lg"
                 type="text"
                 defaultValue={todo.todo}
+                placeholder={todo.todo}
                 onClick={(e) => (e.target.value = "")}
               />
               <Button
