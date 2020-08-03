@@ -33,7 +33,7 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "node Backend/server.js",
+    "start": "nodemon Backend/server.js",
     "start-react": "react-scripts start",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build",
     "build": "react-scripts build",
