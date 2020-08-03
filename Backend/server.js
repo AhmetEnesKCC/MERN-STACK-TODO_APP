@@ -103,7 +103,7 @@ router.route("/delete/:id").delete((req, res) => {
 
 app.use(express.static(path.join(__dirname, "../build")));
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../build", "index.html"));
+  res.sendFile(path.join(__dirname, "../build"));
 });
 
 app.listen(process.env.PORT || 4002, () => {
