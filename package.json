@@ -20,6 +20,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "jquery": "^3.5.1",
+    "mongoose": "^5.9.27",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.1",
@@ -52,7 +53,8 @@
     ]
   },
   "engines": {
-    "node": "^10.0.28"
+    "node": "^10.0.28",
+    "npm": "^16.13.1"
   },
   "proxy": "http://localhost:4002"
 }
