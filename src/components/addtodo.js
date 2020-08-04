@@ -44,24 +44,24 @@ export default function AddTodo() {
         <Button
           onClick={(e) => {
             if (
-              add_note.current.value !== "" &&
-              todos[0].some(
+              add_note.current.value.trim() !== "" &&
+              !todos[0].some(
                 (todo) => todo.todo === add_note.current.value.trim()
-              ) === false
+              )
             ) {
               Axios.post("/todos/add", {
-                todo: add_note.current.value,
+                todo: add_note.current.value.trim(),
                 importance: importance,
                 completed: false,
               });
               setTodoRight("added");
             } else if (
-              todos[0].some((todo) => todo.todo === add_note.current.value) ===
-              true
+              todos[0].some(
+                (todo) => todo.todo === add_note.current.value.trim()
+              ) === true
             ) {
               setTodoRight("exist");
-              console.log("a");
-            } else if (add_note.current.value === "") {
+            } else if (add_note.current.value.trim() === "") {
               setTodoRight(false);
             }
           }}

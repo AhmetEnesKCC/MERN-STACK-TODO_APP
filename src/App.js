@@ -2,14 +2,19 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { faPlusSquare, faEdit } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  HashRouter,
+} from "react-router-dom";
 import AddTodo from "./components/addtodo";
 import Todos from "./components/Todos";
 import EditTodo from "./components/editTodo";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-around">
           <Link className="navbar-brand" to="/">
@@ -28,7 +33,7 @@ function App() {
         <Route path="/addTodo" component={AddTodo}></Route>
         <Route path="/editTodo" component={EditTodo}></Route>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
