@@ -4,7 +4,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const Todo = require("./todo.model");
 const path = require("path");
-
+require("dotenv").config();
 const app = express();
 
 const router = express.Router();
