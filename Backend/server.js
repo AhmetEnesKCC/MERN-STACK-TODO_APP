@@ -13,6 +13,8 @@ const PORT = process.env.PORT || 4002;
 
 app.use(cors());
 app.use(bodyParser.json());
+const uri =
+  "mongodb+srv://AhmetEnesKCC:14531453fsm2@cluster0.zsaga.gcp.mongodb.net/mern-stack-app?retryWrites=true&w=majority";
 
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
